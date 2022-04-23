@@ -7,6 +7,7 @@
         <module>consumer</module>
         <module>provider</module>
         <module>api</module>
+        <module>hystrix-dashboard</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
