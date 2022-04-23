@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: provider-demo
+
+dubbo:
+  application:
+    name: dubbo-provider-demo
+  scan:
+    base-packages: com.demo.Api.impl
+  protocol:
+    name: dubbo
+    port: 20880
+  registry:
+    address: zookeeper://192.168.3.2:2181
