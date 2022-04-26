@@ -1,6 +1,8 @@
 spring:
   application:
     name: provider-demo
+  profiles:
+    active: mybatis
 
 dubbo:
   application:
