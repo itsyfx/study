@@ -16,5 +16,5 @@ spring:
         max-idle: 8
         #最小空闲
         min-idle: 0
-      #连接超时时间
-      timeout: 10000
+        #连接超时时间
+    timeout: 10000
