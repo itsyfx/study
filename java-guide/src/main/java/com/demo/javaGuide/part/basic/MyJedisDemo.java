@@ -10,7 +10,7 @@ public class MyJedisDemo {
         System.out.println(jedis.ping());
 
         String phoneNumber = "13888888888";
-        String userCode = "721367";
+        //String userCode = "721367";
 
         String phoneNumberRedis = jedis.get(phoneNumber);
         if(phoneNumberRedis == null){

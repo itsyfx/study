@@ -5,7 +5,6 @@ import lombok.Data;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -32,6 +31,7 @@ public class Sugar {
     public void tryWith(){
         try(BufferedReader br = new BufferedReader(new FileReader(new File("")))){
             String readLine = br.readLine();
+            System.out.println(readLine);
         }catch (Exception e){
 
         }
@@ -45,11 +45,11 @@ public class Sugar {
 
         String[] strArr = {"a","b","c"};
         List<String> fixedList = Arrays.asList(strArr);
-        //fixedList.add("x");  //error occurs
+        fixedList.add("x");  //error occurs
 
-        List<String> stringList = Arrays.stream(strArr).collect(Collectors.toList());
+        //List<String> stringList = Arrays.stream(strArr).collect(Collectors.toList());
 
-        List<String> obsobs = stringList.stream().filter(str -> str.contains("obs")).collect(Collectors.toList());
+        //List<String> obsobs = stringList.stream().filter(str -> str.contains("obs")).collect(Collectors.toList());
 
         User u = new User();
         List<User> users = new ArrayList<>();
